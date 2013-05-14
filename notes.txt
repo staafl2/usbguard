@@ -1,6 +1,7 @@
 * owner info
 * different versions of windows
 * use appdata instead of temp
+* don't overwrite file - imagine it's running
 
 spec
 * if on usb stick, copy itself to temp, run itself with argument and exit

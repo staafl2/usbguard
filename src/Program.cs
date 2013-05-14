@@ -19,8 +19,7 @@ class Program
                       .Where(drive => drive.IsReady && drive.DriveType == DriveType.Removable);
 
         var myDriveLetter = Assembly.GetExecutingAssembly().Location.ToUpper()[0];
-        var onUsb = myDriveLetter != 'C';
-            // usbDrives().Any(drive => drive.RootDirectory.ToString().ToUpper()[0] == myDriveLetter);
+        var onUsb = usbDrives().Any(drive => drive.RootDirectory.ToString().ToUpper()[0] == myDriveLetter);
 
 
         if (onUsb)
@@ -59,12 +58,19 @@ class Program
     {
         var dir = Path.GetTempPath() + "\\usbGuard";
         Directory.CreateDirectory(dir);
-        File.Copy("usbguard.exe", dir + "\\usbguard.exe", false);
-        File.Copy("base.jpg", dir + "\\usbguard.jpg", false);
+        
+        var fileDest = dir + "\\usbguard.exe";
+        if(!File.Exists(fileDest))
+            File.Copy("usbguard.exe", fileDest, true);
+            
+        var imgDest = dir + "\\base.jpg";
+        if(!File.Exists(imgDest))
+            File.Copy("base.jpg", imgDest, true);
+        
         var proc = new Process();
         var psi = proc.StartInfo;
         psi.FileName = dir + "\\usbguard.exe";
-
+        psi.WorkingDirectory = dir;
         proc.Start();
 
     }
