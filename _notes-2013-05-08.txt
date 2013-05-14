@@ -1,0 +1,28 @@
+changing wallpaper:
+http://stackoverflow.com/questions/1061678/change-desktop-wallpaper-using-code-in-net
+
+getting old wallpaper
+http://stackoverflow.com/questions/2745803/how-to-get-the-name-of-the-select-wallpaper
+
+autorun?
+
+
+
+c# eject usb drive - Google Search
+    http://www.google.com/search?hl=en&newwindow=1&safe=active&as_qdr=all&biw=1034&bih=683&q=c%23+eject+usb+drive&oq=c%23+eject+usb+drive&gs_l=serp.3..0.37086.39484.0.39544.15.10.0.5.5.0.115.867.7j3.10.0...0.0...1c.1.7.serp.ioOlvsIxbCs
+    
+    usb reminder
+    have you ever forgotten your usb stick after using it on some PC? I have. Here's a little app to make sure we don't slap our foreheads in the evening again, at least for this reason.
+    
+    usb plugged in
+        copy program to desktop
+        run copy on desktop
+        create directory on desktop
+        
+        change wallpaper to 'Take your USB stick!
+        
+    #U pressed
+        change wallpaper back
+        move directory to usb
+        eject usb stick
+        

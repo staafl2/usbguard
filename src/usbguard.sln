@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "usbguard", "usbguard.csproj", "{1AF433CB-00AA-4496-9015-3135B2301AAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AF433CB-00AA-4496-9015-3135B2301AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF433CB-00AA-4496-9015-3135B2301AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF433CB-00AA-4496-9015-3135B2301AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF433CB-00AA-4496-9015-3135B2301AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
